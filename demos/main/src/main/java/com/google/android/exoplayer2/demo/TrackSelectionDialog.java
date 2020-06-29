@@ -42,6 +42,7 @@ import com.google.android.material.tabs.TabLayout;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import beta.paytvapp.mca.go.R;
 
 /** Dialog to select tracks. */
 public final class TrackSelectionDialog extends DialogFragment {

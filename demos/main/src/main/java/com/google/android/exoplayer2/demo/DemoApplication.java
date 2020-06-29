@@ -40,6 +40,7 @@ import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
 import java.io.File;
 import java.io.IOException;
+import beta.paytvapp.mca.go.BuildConfig;
 
 /**
  * Placeholder application to facilitate overriding Application methods for debugging and testing.

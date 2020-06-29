@@ -1,5 +1,366 @@
 [
   {
+    "name": "TEF",
+    "samples": [
+      {
+        "name": "FIRE TV TEST PROFILES - STAGING",
+        "uri": "https://b240.cdncert.telefonica.com/240/shss/LIVE$Firestick/index.ism/Manifest?start=LIVE&end=END&device=Smooth_Fixed",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name":"FIRE TV TEST PROFILES - PROD",
+        "uri": "http://b43256.cdn.telefonica.com/43256/_-_by2ZBoDUlvS7QJEyt6UDw1q9G42Dkx10n96Yb2f42oYPu93sFmy-z_jrEVo22Exu_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_yZbQhEtD03JVTwJzV0T-_ikjAha6yTBkyiGg6nOseLjS5aivBXshN_Rou8IvTbIQ6guq7lGRnM7owi3bm93BYbXXdmlrH7GexkQ61izAOClAAEAR1Y1qVIdjDNa1dpgNcZU9zo9ukcOKQy_P87JrhNLLWOsaBfAope5WTyu7JnOOFaQLkKNeqNT9X_VGr9VcJZXJYertg35QK3fKL1ptwqw4uKigaCN4q8Op2GoRi__UQ-b_BBCjcmY0BW3ZKXGTRJYjJ1MD1f6yLtFZEDxl7moUp4jmOjxO8vGcQeYMXRw0iSl8htnBpFAGgD9kAlaP"
+        }
+      },
+      {
+        "name": "TEST VSPP 4K",
+        "uri": "https://213.140.61.167:5555/sdash/LIVE$VSPP1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM2",
+        "extension": "mpd"
+      },
+      {
+        "name": "SMPTE",
+        "uri": "https://livesim.dashif.org/dash/vod/testpic_2s/img_subs.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "HBOPlusEste",
+        "uri": "https://b42678.cdn.telefonica.com/42678/_-_H5KJLNaE_ZjNKIhgnFNHW2BO-MdYk85leZqOw4oZ4OMSfHXHGXjGjxQIJNOfj2Wf_-_/live/disk1/HBOPlusEste/HBOPLUSESTE_CN_DASH_HD/HBOPlusEste.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_HuzNVWPF1NCuGFvLHC-9ArAU5roJz2Uz-SKHz-3Dyr9XpWL1NoNW3uJldotMS5pZZsMz-MHHvNVptpNZKX5fFpmtlbTwbqYFO7Mr413lmfgNEKBJgS4bInQzGUUnVjyUUrqenplSALIFB7PJHf_GDIq6gk96MsR2Gk1oVApEDcewCmduhm0X1vIvlhe3zhX_n-1jwLAKCOUQti79XfynGnbu4MIfYOgSJm8XNQDkX7kkc78i8jyk5cz6lC3PgMvsHr0L8UtCnBdvl9-iBdEnq7TA46QXRgjzNr9ii99SDvPwM4X08vq6o40e0eJW76uZWIpTdVrNlKziDSk6p51bpA"
+        }
+      },
+      {
+        "name": "PRUEBA SUB SMPTE",
+        "uri": "https://b322.cdncert.telefonica.com/live/disk01/CINEMA_2s_CHUNK/DASH_CINEMA_HD/CINEMA_2s_CHUNK.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "Peru prod TNT - PRUEBA SUB SMPTE - KO",
+        "uri": "https://b42021.cdn.telefonica.com/42021/_-_z_Tl0yE6HS0hBCv3sd8icI4EXLOCGioFghmd3_No_0KQNnN0QvxBjXrLG4kJog_k_-_/live/disk1/TNT/TNT_CN_DASH_SD/TNT.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_JpB4w4SiEZVmI7al4JO_pSO0tHGAhM7y6ynSSoMNqZzCkCQfensnZjD2M9eF0vD4y5d8PtQACD30lkxoHXtE-9V3YbbYVsz2GEjqughL_Vz8dExjw0LhO5hJ5qyFSskLJE46eHW4Slg9NefFBsUzwsNE1-sQdhx0DrhH6QEgmYrHJ7g0dFRtzauZ5FbzF_GBvQfI41Q-FsnBxtSPtN4mL7Lmg38KQ3oVRdtll-30B3Sm19AaHzMgZlLEPruWzQd2gyDFZpt8V04xpKvuJHZrJWpp91ViPb1BI2gVGfkzay5F7lVvDPs9UX8IOlpFAfOR"
+        }
+      },
+      {
+        "name": "Peru prod FOX COMEDY HD - PRUEBA SUB SMPTE - OK",
+        "uri": "https://b42480.cdn.telefonica.com/42480/_-_z_Tl0yE6HS0hBCv3sd8icI4EXLOCGioFghmd3_No_0KQNnN0QvxBjXrLG4kJog_k_-_/live/disk1/FoxComedy/FOXCOMEDY_CN_DASH_HD/FoxComedy.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_JpB4w4SiEZVmI7al4JO_pSO0tHGAhM7y6ynSSoMNqZzCkCQfensnZjD2M9eF0vD4y5d8PtQACD30lkxoHXtE-9V3YbbYVsz2GEjqughL_Vz8dExjw0LhO5hJ5qyFSskLJE46eHW4Slg9NefFBsUzwsNE1-sQdhx0DrhH6QEgmYrHJ7g0dFRtzauZ5FbzF_GBvQfI41Q-FsnBxtSPtN4mL7Lmg38KQ3oVRdtll-30B3Sm19AaHzMgZlLEPruWzQd2gyDFZpt8V04xpKvuJHZrJWpp91ViPb1BI2gVGfkzay5F7lVvDPs9UX8IOlpFAfOR"
+        }
+      },
+      {
+        "name": "Peru prod TEST - PRUEBA SUB SMPTE",
+        "uri": "https://b322.cdncert.telefonica.com/live/disk01/CINEMA_2s_CHUNK/DASH_CINEMA_HD/CINEMA_2s_CHUNK.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "Peru prod TEST - PRUEBA SUB SMPTE - OK",
+        "uri": "https://b89.cdncert.telefonica.com/live/disk01/ANEVIA_CINEMA_AUDIO_ENG/DASH_GOOGLE/ANEVIA_CINEMA_AUDIO_ENG.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_JpB4w4SiEZVmI7al4JO_pSO0tHGAhM7y6ynSSoMNqZzCkCQfensnZjD2M9eF0vD4y5d8PtQACD30lkxoHXtE-9V3YbbYVsz2GEjqughL_Vz8dExjw0LhO5hJ5qyFSskLJE46eHW4Slg9NefFBsUzwsNE1-sQdhx0DrhH6QEgmYrHJ7g0dFRtzauZ5FbzF_GBvQfI41Q-FsnBxtSPtN4mL7Lmg38KQ3oVRdtll-30B3Sm19AaHzMgZlLEPruWzQd2gyDFZpt8V04xpKvuJHZrJWpp91ViPb1BI2gVGfkzay5F7lVvDPs9UX8IOlpFAfOR"
+        }
+      },
+      {
+        "name": "MED1493_CDNLIVE_HD",
+        "uri": "https://b43256.cdn.telefonica.com/43256/_-_psi_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_ybKBeSP8OrOqpB3Crqr7TBlinzTZvv8wEWcSz9abl75yl5YJe94ncJy8GEGVsAGsD5SA_RZ3U5mra_X-ZTTbDNCt3xG6rkQ-YXbsNMzZ429EKJXCZKy8a2hQbj0J8la5aHrVR7cscQE2r0jJYNTV-W62auKnMxV1isP-WH1t5hxVXyS4UTT8MLP7lV3wuDlJH9Opd5-TEHRUZ4DNku71vQZexcHxYeu4Zr8c3at9EFKt8rvWYCM5kN8_u74i7_BQnEptnnTU4umMLKJkkvBcgZeKP115LPz7nwGC5sY4nOHsoenAqArdVHMR0IVS3XVt"
+        }
+      },
+      {
+        "name": "MED1493_CDNLIVE_HD-SINDRM1",
+        "uri": "https://b43256.cdn.telefonica.com/43256/_-_psi_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_ybKBeSP8OrOqpB3Crqr7TBlinzTZvv8wEWcSz9abl75yl5YJe94ncJy8GEGVsAGsD5SA_RZ3U5mra_X-ZTTbDNCt3xG6rkQ-YXbsNMzZ429EKJXCZKy8a2hQbj0J8la5aHrVR7cscQE2r0jJYNTV-W62auKnMxV1isP-WH1t5hxVXyS4UTT8MLP7lV3wuDlJH9Opd5-TEHRUZ4DNku71vQZexcHxYeu4Zr8c3at9EFKt8rvWYCM5kN8_u74i7_BQnEptnnTU4umMLKJkkvBcgZeKP115LPz7nwGC5sY4nOHsoenAqArdVHMR0IVS3XVt"
+        }
+      },
+      {
+        "name": "MED1492_CDNLIVE_SD",
+        "uri": "https://b43256.cdn.telefonica.com/43256/_-_psi_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_ybKBeSP8OrOqpB3Crqr7TBlinzTZvv8wEWcSz9abl75yl5YJe94ncJy8GEGVsAGsD5SA_RZ3U5mra_X-ZTTbDNCt3xG6rkQ-YXbsNMzZ429EKJXCZKy8a2hQbj0J8la5aHrVR7cscQE2r0jJYNTV-W62auKnMxV1isP-WH1t5hxVXyS4UTT8MLP7lV3wuDlJH9Opd5-TEHRUZ4DNku71vQZexcHxYeu4Zr8c3at9EFKt8rvWYCM5kN8_u74i7_BQnEptnnTU4umMLKJkkvBcgZeKP115LPz7nwGC5sY4nOHsoenAqArdVHMR0IVS3XVt"
+        }
+      },
+      {
+        "name": "MED1491_CDNLIVE_LD",
+        "uri": "https://b43256.cdn.telefonica.com/43256/_-_psi_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_ybKBeSP8OrOqpB3Crqr7TBlinzTZvv8wEWcSz9abl75yl5YJe94ncJy8GEGVsAGsD5SA_RZ3U5mra_X-ZTTbDNCt3xG6rkQ-YXbsNMzZ429EKJXCZKy8a2hQbj0J8la5aHrVR7cscQE2r0jJYNTV-W62auKnMxV1isP-WH1t5hxVXyS4UTT8MLP7lV3wuDlJH9Opd5-TEHRUZ4DNku71vQZexcHxYeu4Zr8c3at9EFKt8rvWYCM5kN8_u74i7_BQnEptnnTU4umMLKJkkvBcgZeKP115LPz7nwGC5sY4nOHsoenAqArdVHMR0IVS3XVt"
+        }
+      },
+      {
+        "name": "L7D",
+        "uri": "http://B32950.mca.tid.es/32950/shss/LIVE$VSPP2_SPORT_AUD_QAA2/2.ism/Manifest?start=2020-06-05T11:59:57Z&end=2020-06-05T13:30:00Z&device=SmoothStreaming-StandardDefinition&movieId=3117287",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "AR-PROD-SS-LA NACION+",
+        "uri": "http://b43253.cdn.telefonica.com/43253/_-_WLy4RoKexOpOnrEHHtlLqpnEL25zfp5M7Xj4wvKa9Y7hxHVZp_Ode38g17002AjN_-_/shss/LIVE$Nacin/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_3VnX0Ki7pv3wbICAAeHcHkXHxIPxw2WqjuEEYQD12Q3O-gJ-BnngcvP0nN928Es-LCKKN650sqSeoaLDHfVpqLiMJo3QhLkCyvH_PoEB0CfDWGLN2Fv3wCl6L94uneoehyyXz1mMoPvohIKavGsBcxkz4reb1IQg4IbDZL4eJBggaM3QDY37YPPurtfoLkiChBivm9iJqLJGKjqZUOZCXpkwAOGhtx73lEboi_YdyfCOdaJ3EgA7ego4PEM3J4Dr0aE5uwmwwQn7TsoPA16UczsBt0sPG5sAPRuHeetrUHxU0ILRBdKsPC2VrCMreLZx"
+        }
+      },
+      {
+        "name": "PRUEBA FIRE TV",
+        "uri": "http://213.140.61.167:5555/shss/LIVE$VSPP_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "FIRE TV TEST PROFILES",
+        "uri": "https://b240.cdncert.telefonica.com/240/shss/LIVE$Firestick/index.ism/Manifest?start=LIVE&end=END&device=Smooth_Fixed",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_ORG-HD",
+        "uri": "http://b240.cdncert.telefonica.com/240/shss/LIVE$VSPP_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_ORG-LD",
+        "uri": "http://b240.cdncert.telefonica.com/240/shss/LIVE$VSPP_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_ORG-SD",
+        "uri": "http://b240.cdncert.telefonica.com/240/shss/LIVE$VSPP_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_ORG-SINDRM1",
+        "uri": "http://b240.cdncert.telefonica.com/240/shss/LIVE$VSPP_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_ORG-HD",
+        "uri": "http://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_ORG-LD",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_ORG-SD",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_ORG-SINDRM1",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_ORG/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA-HD",
+        "uri": "https://b36-p0-hfc-agn2qswu.1.cdncert.telefonica.com/_36/shss/LIVE$VSPP_SPORT_AUD_QAA/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA-SD",
+        "uri": "https://b36-p0-hfc-agn2qswu.1.cdncert.telefonica.com/_36/shss/LIVE$VSPP_SPORT_AUD_QAA/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA-LD",
+        "uri": "https://b36-p0-hfc-agn2qswu.1.cdncert.telefonica.com/_36/shss/LIVE$VSPP_SPORT_AUD_QAA/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA-SINDRM1",
+        "uri": "https://b36-p0-hfc-agn2qswu.1.cdncert.telefonica.com/_36/shss/LIVE$VSPP_SPORT_AUD_QAA/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA_2-HD",
+        "uri": "https://b36.cdncert.telefonica.com/36/_-_-_IG7O9zMdxQrww8iFeq8X_Af3WDaP1l4wPq-ufjR3TeLzHB1hg9M_fyOzh3opyi_-_/shss/LIVE$VSPP_SPORT_AUD_QAA_2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA_2-SD",
+        "uri": "https://b36.cdncert.telefonica.com/36/_-_-_IG7O9zMdxQrww8iFeq8X_Af3WDaP1l4wPq-ufjR3TeLzHB1hg9M_fyOzh3opyi_-_/shss/LIVE$VSPP_SPORT_AUD_QAA_2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA_2-LD",
+        "uri": "https://b36.cdncert.telefonica.com/36/_-_-_IG7O9zMdxQrww8iFeq8X_Af3WDaP1l4wPq-ufjR3TeLzHB1hg9M_fyOzh3opyi_-_/shss/LIVE$VSPP_SPORT_AUD_QAA_2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP_SPORT_AUD_QAA_2-SINDRM1",
+        "uri": "https://b36.cdncert.telefonica.com/36/_-_-_IG7O9zMdxQrww8iFeq8X_Af3WDaP1l4wPq-ufjR3TeLzHB1hg9M_fyOzh3opyi_-_/shss/LIVE$VSPP_SPORT_AUD_QAA_2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_QAA2-HD",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_QAA2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_QAA2-LD",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_QAA2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-LowDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_QAA2-SD",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_QAA2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-StandardDefinition-Staging-29",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "VSPP2_SPORT_AUD_QAA2-SINDRM1",
+        "uri": "https://b25.cdnprepro.telefonica.com/25/shss/LIVE$VSPP2_SPORT_AUD_QAA2/index.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-SINDRM1",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      }
+    ]
+  },
+  {
     "name": "YouTube DASH",
     "samples": [
       {

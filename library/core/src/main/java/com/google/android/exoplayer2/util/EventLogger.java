@@ -379,6 +379,9 @@ public class EventLogger implements AnalyticsListener {
   @Override
   public void onLoadStarted(
       EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
+//    logd(eventTime, "loadStarted trackType " + mediaLoadData.trackType);
+//    logd(eventTime, "loadStarted trackFormat " + mediaLoadData.trackFormat);
+//    logd(eventTime, "loadStarted " + loadEventInfo.dataSpec.toString() + " - " + mediaLoadData.dataType);
     // Do nothing.
   }
 
@@ -401,6 +404,9 @@ public class EventLogger implements AnalyticsListener {
   @Override
   public void onLoadCompleted(
       EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
+    logd(eventTime, "loadCompleted trackType " + mediaLoadData.trackType);
+//    logd(eventTime, "loadCompleted trackFormat " + mediaLoadData.trackFormat);
+//    logd(eventTime, "loadCompleted " + loadEventInfo.dataSpec.toString());
     // Do nothing.
   }
 

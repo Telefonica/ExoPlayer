@@ -38,6 +38,7 @@ import com.google.android.exoplayer2.util.Util;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.concurrent.CopyOnWriteArraySet;
+import beta.paytvapp.mca.go.R;
 
 /** Tracks media that has been downloaded. */
 public class DownloadTracker {

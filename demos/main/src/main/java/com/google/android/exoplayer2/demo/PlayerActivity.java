@@ -20,6 +20,7 @@ import android.content.pm.PackageManager;
 import android.media.MediaDrm;
 import android.net.Uri;
 import android.os.Bundle;
+import android.os.Handler;
 import android.util.Pair;
 import android.view.KeyEvent;
 import android.view.View;
@@ -41,6 +42,7 @@ import com.google.android.exoplayer2.RenderersFactory;
 import com.google.android.exoplayer2.SimpleExoPlayer;
 import com.google.android.exoplayer2.audio.AudioAttributes;
 import com.google.android.exoplayer2.demo.Sample.UriSample;
+import com.google.android.exoplayer2.drm.DefaultDrmSessionEventListener;
 import com.google.android.exoplayer2.drm.DefaultDrmSessionManager;
 import com.google.android.exoplayer2.drm.DrmSessionManager;
 import com.google.android.exoplayer2.drm.ExoMediaCrypto;
@@ -83,6 +85,9 @@ import java.lang.reflect.Constructor;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
+import java.util.HashMap;
+import java.util.UUID;
+import beta.paytvapp.mca.go.R;
 
 /** An activity that plays media using {@link SimpleExoPlayer}. */
 public class PlayerActivity extends AppCompatActivity
@@ -489,12 +494,25 @@ public class PlayerActivity extends AppCompatActivity
       errorStringId = R.string.error_drm_unsupported_scheme;
     } else {
       MediaDrmCallback mediaDrmCallback =
-          createMediaDrmCallback(drmInfo.drmLicenseUrl, drmInfo.drmKeyRequestProperties);
+          createMediaDrmCallback(drmInfo.drmLicenseUrl, drmInfo.drmKeyRequestProperties, drmInfo.drmScheme);
+      HashMap<String, String> map = new HashMap<>();
+      if (drmInfo.drmScheme.equals(C.PLAYREADY_UUID) && drmInfo.drmKeyRequestProperties != null) {
+        for (int i = 0; i < drmInfo.drmKeyRequestProperties.length - 1; i += 2) {
+          map.put(drmInfo.drmKeyRequestProperties[i], drmInfo.drmKeyRequestProperties[i + 1]);
+        }
+      }
+
       drmSessionManager =
           new DefaultDrmSessionManager.Builder()
+              .setKeyRequestParameters(map)
               .setUuidAndExoMediaDrmProvider(drmInfo.drmScheme, FrameworkMediaDrm.DEFAULT_PROVIDER)
               .setMultiSession(drmInfo.drmMultiSession)
               .build(mediaDrmCallback);
+
+      DefaultDrmSessionEventListener drmSessionEventListener = new DrmSessionEventListener();
+      Handler videoPlayerHandler = new Handler();
+
+      ((DefaultDrmSessionManager) drmSessionManager).addListener(videoPlayerHandler, drmSessionEventListener);
     }
 
     if (drmSessionManager == null) {
@@ -539,12 +557,12 @@ public class PlayerActivity extends AppCompatActivity
   }
 
   private HttpMediaDrmCallback createMediaDrmCallback(
-      String licenseUrl, String[] keyRequestPropertiesArray) {
+      String licenseUrl, String[] keyRequestPropertiesArray, UUID drmScheme) {
     HttpDataSource.Factory licenseDataSourceFactory =
         ((DemoApplication) getApplication()).buildHttpDataSourceFactory();
     HttpMediaDrmCallback drmCallback =
         new HttpMediaDrmCallback(licenseUrl, licenseDataSourceFactory);
-    if (keyRequestPropertiesArray != null) {
+    if (drmScheme.equals(C.WIDEVINE_UUID) && keyRequestPropertiesArray != null) {
       for (int i = 0; i < keyRequestPropertiesArray.length - 1; i += 2) {
         drmCallback.setKeyRequestProperty(keyRequestPropertiesArray[i],
             keyRequestPropertiesArray[i + 1]);

@@ -27,6 +27,7 @@ import com.google.android.exoplayer2.ui.DownloadNotificationHelper;
 import com.google.android.exoplayer2.util.NotificationUtil;
 import com.google.android.exoplayer2.util.Util;
 import java.util.List;
+import beta.paytvapp.mca.go.R;
 
 /** A service for downloading media. */
 public class DemoDownloadService extends DownloadService {
