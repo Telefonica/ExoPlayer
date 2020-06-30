@@ -4,7 +4,7 @@
     "samples": [
       {
         "name": "SINDRM2",
-        "uri": "https://213.140.61.167:5555/sdash/LIVE$VSPP1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM2",
+        "uri": "http://213.140.61.167:5555/sdash/LIVE$VSPP1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM2",
         "extension": "mpd",
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
