@@ -1,5 +1,35 @@
 [
   {
+    "name": "ANDROIDTV-2831 - LIVE VSPP 4K TESTS",
+    "samples": [
+      {
+        "name": "SINDRM2",
+        "uri": "https://213.140.61.167:5555/sdash/LIVE$VSPP1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM2",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "Dash_Fixed",
+        "uri": "http://213.140.61.169:5555/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dash_Fixed",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "SINDRM1",
+        "uri": "http://213.140.61.169:5555/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM1",
+        "extension": "mpd"
+      }
+    ]
+  },
+  {
     "name": "TEF",
     "samples": [
       {
@@ -21,11 +51,6 @@
         "drm_key_request_properties": {
           "PRCustomData": "AU_ZGAE6U_yZbQhEtD03JVTwJzV0T-_ikjAha6yTBkyiGg6nOseLjS5aivBXshN_Rou8IvTbIQ6guq7lGRnM7owi3bm93BYbXXdmlrH7GexkQ61izAOClAAEAR1Y1qVIdjDNa1dpgNcZU9zo9ukcOKQy_P87JrhNLLWOsaBfAope5WTyu7JnOOFaQLkKNeqNT9X_VGr9VcJZXJYertg35QK3fKL1ptwqw4uKigaCN4q8Op2GoRi__UQ-b_BBCjcmY0BW3ZKXGTRJYjJ1MD1f6yLtFZEDxl7moUp4jmOjxO8vGcQeYMXRw0iSl8htnBpFAGgD9kAlaP"
         }
-      },
-      {
-        "name": "TEST VSPP 4K",
-        "uri": "https://213.140.61.167:5555/sdash/LIVE$VSPP1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM2",
-        "extension": "mpd"
       },
       {
         "name": "SMPTE",
