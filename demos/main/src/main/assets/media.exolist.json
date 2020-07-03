@@ -26,6 +26,11 @@
         "name": "SINDRM1",
         "uri": "http://213.140.61.169:5555/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM1",
         "extension": "mpd"
+      },
+      {
+        "name": "TEST_4K",
+        "uri": "http://b89.cdncert.telefonica.com/89/live/disk01/TEST_4K/TEST_4K/TEST_4K.mpd",
+        "extension": "mpd"
       }
     ]
   },
