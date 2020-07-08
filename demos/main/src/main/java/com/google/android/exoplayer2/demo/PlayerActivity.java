@@ -15,6 +15,11 @@
  */
 package com.google.android.exoplayer2.demo;
 
+import static com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection.DEFAULT_BANDWIDTH_FRACTION;
+import static com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection.DEFAULT_BUFFERED_FRACTION_TO_LIVE_EDGE_FOR_QUALITY_INCREASE;
+import static com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection.DEFAULT_MIN_DURATION_TO_RETAIN_AFTER_DISCARD_MS;
+import static com.google.android.exoplayer2.trackselection.AdaptiveTrackSelection.DEFAULT_MIN_TIME_BETWEEN_BUFFER_REEVALUTATION_MS;
+
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.media.MediaDrm;
@@ -34,8 +39,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.C.ContentType;
+import com.google.android.exoplayer2.DefaultLoadControl;
 import com.google.android.exoplayer2.ExoPlaybackException;
 import com.google.android.exoplayer2.Format;
+import com.google.android.exoplayer2.LoadControl;
 import com.google.android.exoplayer2.PlaybackPreparer;
 import com.google.android.exoplayer2.Player;
 import com.google.android.exoplayer2.RenderersFactory;
@@ -76,15 +83,20 @@ import com.google.android.exoplayer2.ui.DebugTextViewHelper;
 import com.google.android.exoplayer2.ui.PlayerControlView;
 import com.google.android.exoplayer2.ui.PlayerView;
 import com.google.android.exoplayer2.ui.spherical.SphericalGLSurfaceView;
+import com.google.android.exoplayer2.upstream.BandwidthMeter;
 import com.google.android.exoplayer2.upstream.DataSource;
+import com.google.android.exoplayer2.upstream.DefaultBandwidthMeter;
 import com.google.android.exoplayer2.upstream.HttpDataSource;
+import com.google.android.exoplayer2.util.Clock;
 import com.google.android.exoplayer2.util.ErrorMessageProvider;
 import com.google.android.exoplayer2.util.EventLogger;
+import com.google.android.exoplayer2.util.Log;
 import com.google.android.exoplayer2.util.Util;
 import java.lang.reflect.Constructor;
 import java.net.CookieHandler;
 import java.net.CookieManager;
 import java.net.CookiePolicy;
+import java.util.EventListener;
 import java.util.HashMap;
 import java.util.UUID;
 import beta.paytvapp.mca.go.R;
@@ -92,6 +104,14 @@ import beta.paytvapp.mca.go.R;
 /** An activity that plays media using {@link SimpleExoPlayer}. */
 public class PlayerActivity extends AppCompatActivity
     implements OnClickListener, PlaybackPreparer, PlayerControlView.VisibilityListener {
+
+  private static final String TAG = "PlayerActivity";
+
+  private static final int DEFAULT_BUFFER_FOR_PLAYBACK_MS = 2000;
+  private static final int DEFAULT_MAX_BUFFER_MS = 50000;
+  private static final int DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS = 5000;
+
+  private static final int DEFAULT_WINDOW_MAX_WEIGHT = 6000;
 
   // Activity extras.
 
@@ -220,7 +240,11 @@ public class PlayerActivity extends AppCompatActivity
       if (Util.SDK_INT >= 21 && tunneling) {
         builder.setTunnelingAudioSessionId(C.generateAudioSessionIdV21(/* context= */ this));
       }
-      trackSelectorParameters = builder.build();
+      trackSelectorParameters = builder
+          .setAllowVideoMixedMimeTypeAdaptiveness(true)
+          .setAllowVideoNonSeamlessAdaptiveness(true)
+          .setAllowAudioMixedMimeTypeAdaptiveness(true)
+          .build();
       clearStartPosition();
     }
   }
@@ -363,9 +387,18 @@ public class PlayerActivity extends AppCompatActivity
       TrackSelection.Factory trackSelectionFactory;
       String abrAlgorithm = intent.getStringExtra(ABR_ALGORITHM_EXTRA);
       if (abrAlgorithm == null || ABR_ALGORITHM_DEFAULT.equals(abrAlgorithm)) {
-        trackSelectionFactory = new AdaptiveTrackSelection.Factory();
+        trackSelectionFactory = new AdaptiveTrackSelection.Factory(
+            15000, //DEFAULT_MIN_DURATION_FOR_QUALITY_INCREASE_MS,//10sg The minimum duration of buffered data required for the selected track to switch to one of higher quality.
+            35000, //DEFAULT_MAX_DURATION_FOR_QUALITY_DECREASE_MS,//25sg The maximum duration of buffered data required for the selected track to switch to one of lower quality.
+            DEFAULT_MIN_DURATION_TO_RETAIN_AFTER_DISCARD_MS,//25sg When switching to a track of significantly higher quality, the selection may indicate that media already buffered at the lower quality can be discarded to speed up the switch. This is the minimum duration of media that must be retained at the lower quality.
+            DEFAULT_BANDWIDTH_FRACTION,//0,7 The fraction of the available bandwidth that the selection should consider available for use. Setting to a value less than 1 is recommended to account for inaccuracies in the bandwidth estimator.
+            DEFAULT_BUFFERED_FRACTION_TO_LIVE_EDGE_FOR_QUALITY_INCREASE,//0,75
+            DEFAULT_MIN_TIME_BETWEEN_BUFFER_REEVALUTATION_MS,//2sg
+            Clock.DEFAULT);
+        Log.d(TAG, "[initializePlayer] AdaptiveTrackSelection");
       } else if (ABR_ALGORITHM_RANDOM.equals(abrAlgorithm)) {
         trackSelectionFactory = new RandomTrackSelection.Factory();
+        Log.d(TAG, "[initializePlayer] RandomTrackSelection");
       } else {
         showToast(R.string.error_unrecognized_abr_algorithm);
         finish();
@@ -384,6 +417,8 @@ public class PlayerActivity extends AppCompatActivity
       player =
           new SimpleExoPlayer.Builder(/* context= */ this, renderersFactory)
               .setTrackSelector(trackSelector)
+              .setLoadControl(getLoadControl())
+              .setBandwidthMeter(getDefaultBandWithMeter())
               .build();
       player.addListener(new PlayerEventListener());
       player.setAudioAttributes(AudioAttributes.DEFAULT, /* handleAudioFocus= */ true);
@@ -403,6 +438,27 @@ public class PlayerActivity extends AppCompatActivity
     }
     player.prepare(mediaSource, !haveStartPosition, false);
     updateButtonVisibility();
+  }
+
+  private LoadControl getLoadControl() {
+    return new DefaultLoadControl.Builder()
+        .setBufferDurationsMs(DEFAULT_MAX_BUFFER_MS, DEFAULT_MAX_BUFFER_MS,
+            DEFAULT_BUFFER_FOR_PLAYBACK_MS, DEFAULT_BUFFER_FOR_PLAYBACK_AFTER_REBUFFER_MS)
+        .createDefaultLoadControl();
+  }
+
+
+  private BandwidthMeter getDefaultBandWithMeter() {
+    final DefaultBandwidthMeter bandWithMeter = new DefaultBandwidthMeter.Builder(getBaseContext())
+        .setSlidingWindowMaxWeight(DEFAULT_WINDOW_MAX_WEIGHT)
+        .build();
+    bandWithMeter.addEventListener(new Handler(), (elapsedMs, bytesTransferred, bitrateEstimate) ->
+        Log.d(TAG,
+            "[onBandwidthSample] elapsedMs: " + elapsedMs + " bytesTransferred: " + bytesTransferred
+                + " bitrateEstimate: " + bitrateEstimate));
+
+    return bandWithMeter;
+
   }
 
   @Nullable
