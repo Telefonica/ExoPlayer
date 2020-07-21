@@ -26,6 +26,111 @@
         "name": "SINDRM1",
         "uri": "http://213.140.61.169:5555/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-SINDRM1",
         "extension": "mpd"
+      },
+      {
+        "name": "TEST_4K",
+        "uri": "http://b89.cdncert.telefonica.com/89/live/disk01/TEST_4K/TEST_4K/TEST_4K.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "PR 2730966 Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo ",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/06/04/6044864_5E722D63AFC1A5F8/PR_4K_SDR_AM_169__15f79957be3d43f4.mpd",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "WV 2730966 Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo ",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/06/04/6044864_5E722D63AFC1A5F8/PR_4K_SDR_AM_169__15f79957be3d43f4.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "PR 2733317 Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo para España",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/06/01/6017185_0950D3BCF7C6CB71/PR_4K_SDR_AM_169_DOLBY__367f94766d3b46eb.mpd",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "WV 2733317 Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo para España",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/06/01/6017185_0950D3BCF7C6CB71/PR_4K_SDR_AM_169_DOLBY__367f94766d3b46eb.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+        }
+      },
+      {
+        "name": "PR_4K_HDR10_AM_169__88fa06d298bf404c_video_Hevc_0",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/07/96/7969207_1C6229DDF2BCF489/PR_4K_HDR10_AM_169__88fa06d298bf404c.mpd",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "WV_4K_HDR10_AM_169__88fa06d298bf404c_video_Hevc_0",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/07/96/7969207_1C6229DDF2BCF489/PR_4K_HDR10_AM_169__88fa06d298bf404c.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "1. ID 3274239 - Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo 6.3.12:",
+        "uri": "http://b39424.cdn.telefonica.com/00/07/96/7969207_1C6229DDF2BCF489/PR_4K_HDR10_AM_169__88fa06d298bf404c.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "2. ID 3277849 - Quantum Of Solace 4K/UHD HDR10 2 audiosDolby 1 subtítulo 6.3.12:",
+        "uri": "http://b39424.cdn.telefonica.com/00/07/99/7993407_D5CE1754A81BFB5F/PR_4K_HDR10_AM_169_DOLBY__9e5d3871b4424ce2.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "3. ID 3278318 - Quantum Of Solace 4K/UHD SDR 2 audios 1 subtítulo 6.3.12:",
+        "uri": "http://b39424.cdn.telefonica.com/00/07/99/7993406_4445F15B5F36C611/PR_4K_SDR_AM_169__f61cadb3904245f0.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "4. ID 3278449 - Quantum Of Solace 4K/UHD SDR 2 audios Dolby 1 subtítulo 6.3.12",
+        "uri": "http://b39424.cdn.telefonica.com/00/07/99/7993408_75C5C91C69221F95/PR_4K_SDR_AM_169_DOLBY__dc1faa1979ce478b.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
       }
     ]
   },
@@ -43,7 +148,7 @@
         }
       },
       {
-        "name":"FIRE TV TEST PROFILES - PROD",
+        "name": "FIRE TV TEST PROFILES - PROD",
         "uri": "http://b43256.cdn.telefonica.com/43256/_-_by2ZBoDUlvS7QJEyt6UDw1q9G42Dkx10n96Yb2f42oYPu93sFmy-z_jrEVo22Exu_-_/shss/LIVE$FoxSportsHD/2.ism/Manifest?start=LIVE&end=END&device=SmoothStreaming-HighDefinition",
         "extension": "ism",
         "drm_scheme": "playready",
