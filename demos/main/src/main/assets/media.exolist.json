@@ -135,6 +135,31 @@
     ]
   },
   {
+    "name": "ANDROIDTV-4460 - ANEVIA 4.6.13 SUBTITLES",
+    "samples": [
+      {
+        "name": "ANEVIA_SPORT_AUDIO_ORG - DRM",
+        "uri": "http://b89.cdncert.telefonica.com/89/_-_psi_-_/live/disk01/ANEVIA_SPORT_AUDIO_ORG/QA_DASH_SPORT_HD/ANEVIA_SPORT_AUDIO_ORG.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+        }
+      },
+      {
+        "name": "ANEVIA_SPORT_AUDIO_ORG - SIN DRM",
+        "uri": "http://b89.cdncert.telefonica.com/89/_-_psi_-_/live/disk01/ANEVIA_SPORT_AUDIO_ORG/QA_DASH_SPORT_HD/ANEVIA_SPORT_AUDIO_ORG.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "DASH_GOOGLE - ANEVIA_SPORT_AUDIO_ORG - SIN DRM",
+        "uri": "http://b89.cdncert.telefonica.com/89/live/disk01/ANEVIA_SPORT_AUDIO_ORG/DASH_GOOGLE/ANEVIA_SPORT_AUDIO_ORG.mpd",
+        "extension": "mpd"
+      }
+    ]
+  },
+  {
     "name": "TEF",
     "samples": [
       {
