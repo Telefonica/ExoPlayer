@@ -153,8 +153,13 @@
         "extension": "mpd"
       },
       {
-        "name": "DASH_GOOGLE - ANEVIA_SPORT_AUDIO_ORG - SIN DRM",
+        "name": "ANEVIA 4.6.13 - ANEVIA_SPORT_AUDIO_ORG - SIN DRM",
         "uri": "http://b89.cdncert.telefonica.com/89/live/disk01/ANEVIA_SPORT_AUDIO_ORG/DASH_GOOGLE/ANEVIA_SPORT_AUDIO_ORG.mpd",
+        "extension": "mpd"
+      },
+      {
+        "name": "ANEVIA 4.4.11 - ANEVIA_SPORT_AUDIO_ORG - SIN DRM",
+        "uri": "http://213.140.61.209/live/disk01/ANEVIA_SPORT_AUDIO_ORG/DASH_GOOGLE/ANEVIA_SPORT_AUDIO_ORG.mpd",
         "extension": "mpd"
       }
     ]

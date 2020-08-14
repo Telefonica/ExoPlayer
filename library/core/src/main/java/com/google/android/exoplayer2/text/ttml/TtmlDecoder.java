@@ -15,6 +15,7 @@
  */
 package com.google.android.exoplayer2.text.ttml;
 
+import android.annotation.SuppressLint;
 import android.text.Layout;
 import com.google.android.exoplayer2.C;
 import com.google.android.exoplayer2.text.Cue;
@@ -27,6 +28,7 @@ import com.google.android.exoplayer2.util.Util;
 import com.google.android.exoplayer2.util.XmlPullParserUtil;
 import java.io.ByteArrayInputStream;
 import java.io.IOException;
+import java.nio.charset.StandardCharsets;
 import java.util.ArrayDeque;
 import java.util.HashMap;
 import java.util.Map;
@@ -102,6 +104,16 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
     }
   }
 
+  public static void largeLog(String tag, String content) {
+    if (content.length() > 4000) {
+      Log.d(tag, content.substring(0, 4000));
+      largeLog(tag, content.substring(4000));
+    } else {
+      Log.d(tag, content);
+    }
+  }
+
+    @SuppressLint("NewApi")
   @Override
   protected Subtitle decode(byte[] bytes, int length, boolean reset)
       throws SubtitleDecoderException {
@@ -112,6 +124,14 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
       Map<String, String> imageMap = new HashMap<>();
       regionMap.put(TtmlNode.ANONYMOUS_REGION_ID, new TtmlRegion(null));
       ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes, 0, length);
+
+//      int n = in.available();
+//      byte[] bytes = new byte[n];
+//      in.read(bytes, 0, n);
+      String ss = new String(bytes, StandardCharsets.UTF_8); // Or any encoding.
+      largeLog(TAG,
+          "decode() ss = [" + ss + "]");
+
       xmlParser.setInput(inputStream, null);
       TtmlSubtitle ttmlSubtitle = null;
       ArrayDeque<TtmlNode> nodeStack = new ArrayDeque<>();
@@ -320,6 +340,12 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
     float line;
 
     String regionOrigin = XmlPullParserUtil.getAttributeValue(xmlParser, TtmlNode.ATTR_TTS_ORIGIN);
+    Log.d(TAG + "ALEX",
+        "parseRegionAttributes() regionOrigin = [" + regionOrigin + "]");
+    if (regionOrigin == null) {
+//      regionOrigin = "0% 75%";
+    }
+
     if (regionOrigin != null) {
       Matcher originPercentageMatcher = PERCENTAGE_COORDINATES.matcher(regionOrigin);
       Matcher originPixelMatcher = PIXEL_COORDINATES.matcher(regionOrigin);
@@ -363,6 +389,11 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
     float width;
     float height;
     String regionExtent = XmlPullParserUtil.getAttributeValue(xmlParser, TtmlNode.ATTR_TTS_EXTENT);
+    Log.d(TAG + "ALEX",
+        "parseRegionAttributes() regionExtent = [" + regionExtent + "]");
+    if (regionExtent == null) {
+//      regionExtent = "100% 18%";
+    }
     if (regionExtent != null) {
       Matcher extentPercentageMatcher = PERCENTAGE_COORDINATES.matcher(regionExtent);
       Matcher extentPixelMatcher = PIXEL_COORDINATES.matcher(regionExtent);
@@ -623,6 +654,9 @@ public final class TtmlDecoder extends SimpleSubtitleDecoder {
 
   private static void parseFontSize(String expression, TtmlStyle out) throws
       SubtitleDecoderException {
+//    expression = "0.68%";
+    Log.d(TAG,
+        "parseFontSize() called with: expression = [" + expression + "], out = [" + out + "]");
     String[] expressions = Util.split(expression, "\\s+");
     Matcher matcher;
     if (expressions.length == 1) {

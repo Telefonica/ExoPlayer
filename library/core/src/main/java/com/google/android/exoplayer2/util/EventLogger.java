@@ -405,6 +405,7 @@ public class EventLogger implements AnalyticsListener {
   public void onLoadCompleted(
       EventTime eventTime, LoadEventInfo loadEventInfo, MediaLoadData mediaLoadData) {
     logd(eventTime, "loadCompleted trackType " + mediaLoadData.trackType);
+    logd(eventTime, "loadCompleted dataSpec " + loadEventInfo.dataSpec);
 //    logd(eventTime, "loadCompleted trackFormat " + mediaLoadData.trackFormat);
 //    logd(eventTime, "loadCompleted " + loadEventInfo.dataSpec.toString());
     // Do nothing.
