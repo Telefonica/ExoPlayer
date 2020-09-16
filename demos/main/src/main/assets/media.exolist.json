@@ -1,5 +1,54 @@
 [
   {
+    "name": "Firestick 7",
+    "samples": [
+      {
+        "name": "Big Buck Bunny - No DRM",
+        "uri": "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"
+      },
+      {
+        "name": "DASH - Widevine",
+        "uri": "http://b39882-p15-h81-aeipmswu.1.cdn.telefonica.com/_39882/sdash/LIVE$HDFS2/2.mpd/Manifest.mpd?start=2020-09-14T09:59:55Z&end=2020-09-14T11:45:05Z&device=Dashavc-HighDefinition&movieId=10815097",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+        }
+      },
+      {
+        "name": "AndroidTV-4541: Trailer - PlayReady",
+        "uri": "http://o080.b41562.cdn.telefonica.com/41562/_-_psi_-_/00/26/44/26446413_D097D976329E2AF5/PR_ALL_US_169__5037d35628be47fe.mpd?tcdn-bitrate-filter=HD",
+        "extension": "mpd",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+        }
+      },
+      {
+        "name": "AndroidTV-4533: Subtitles + Audio",
+        "uri": "http://o080.b38489.cdn.telefonica.com/38489/_-_Ga80ycATl23iIktMDw_Mm3i34h2yknsPdC4FdIzbf7E_-_/00/46/00/46001396_A5333CEC26E44104/BRA_SUBSD_US_169__ddbfd48d2067434a.ism/manifest",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+        }
+      },
+      {
+        "name": "AndroidTV-4542: VoD Exoplayer Exception",
+        "uri": "http://o080.b38489.cdn.telefonica.com/38489/_-_psi_-_/00/46/27/46278738_707140DFB1C2B2D3/BRA_HDP_US_169__cf5dfb7d4a5b4131.ism/manifest",
+        "extension": "ism",
+        "drm_scheme": "playready",
+        "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
+        "drm_key_request_properties": {
+          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+        }
+      }
+    ]
+  },
+  {
     "name": "ANDROIDTV-2831 - LIVE VSPP 4K TESTS",
     "samples": [
       {
