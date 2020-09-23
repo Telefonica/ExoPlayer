@@ -13,7 +13,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -23,7 +23,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -33,7 +33,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://wvcypherdrm.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -43,7 +43,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_O8l9bkAbFm4UMpVH96BVy_HXa1YfY3yXuntxDnz49KSeS7ZEAxLqTjSRm5bgBhn3uznGDSkziSpLo2V5kXXCE-3bAwIpobxV2HhkFAhAP3thEX4XURmcTRoTObbfkep4OLreCn9RT2mZjsp5OkWSiUhFOYdCUI1SSpKbt7gPpJybmpypv5q_4FSLW6E2KDlcTo90fElWGA_l4AIVdigHdRg7Kl-ZnVEl9Bwqhnil4cF-o9uysgRnIDNnDvqBnQHC15bl4tplxYMwKLiiNKYHhW1XCRibtqzFHpQLWsAmx1kCYnP3S7oMBJRZmaOzLafo"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       }
     ]
@@ -68,7 +68,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -88,7 +88,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -98,7 +98,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -108,7 +108,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -118,7 +118,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_CDXbD3Ze_vvRaN39eJHFgnt6LehBAPiy2t3YSo3w1rfQaveBB5_7y8KgXfKQ7gII1ZNUtyRHNAE-yFpHEu8FOKAc5R4JibBkOOVH25u4tZJNH57tMncFXsxwCl7DOqGdge38l4atuj7zv7QL8ryaw1l1dlHRjUIQQavvfFvN6Vc_axdw7vm4bNKve7gx4ocRWwVQincp9dQ6uOyVKpAv8JDJP8qGa3NFUoFaUjY2mbJkutbRrG1w71g9CD-Bcah2_DRFPKW53_6rrTcx3pDcWHPpeLUJfedA2UR7IZW7yqg9Yz8PE-iw-TB-92ecG4tb"
+          "X-Authentication":"AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -128,7 +128,7 @@
         "drm_scheme": "playready",
         "drm_license_url": "https://msplayreadydrm-preprod.labs.gvp.telefonica.com/rightsmanager.asmx",
         "drm_key_request_properties": {
-          "PRCustomData": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "PRCustomData": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -138,7 +138,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -148,7 +148,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -158,7 +158,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -168,7 +168,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "X-Authentication": "AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       },
       {
@@ -178,7 +178,7 @@
         "drm_scheme": "widevine",
         "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
         "drm_key_request_properties": {
-          "X-Authentication": "AU_ZGAE6U_-dc2G6ujB6f2lL554kPC_Pl46gSRDCvUzdytvTWMZIpN5tJaGMlz_Xt_3yYxolW8ogaDvNq_GP-jLC91Qk9Lo-hDvO9UR35GhV_dq7525XVuYdRCDJ0XlLAN70as5Q4yEix4LdS55F3vv4sUmZTXTzAVxSo_oL0PWx8FAiYXfqFyL5Ypum294c6HCVJBnPI52BMoBPDyBeAtI-SoQTlo4ZoZnF-wkbMjbs50ucQFoWD4vv47zPxIdcjRdOmWLp1_CMAsFBwAcJOWezOyeN65HIucvqh2dpBtVbvA3CY73GfPde5II6otNMm6NNelvT_i"
+          "X-Authentication":"AU_ZGAE6U_gkFleKEGXlZPxH_CJl6UVgga-fBQ3p5PSNspTG7V43WlNTbuFtEk22V5EW5XjNqBDWaV1thFzv94ryudmhXZwzCfxf1F3sEmSbnAOxq_JFo9EmwVCDZjEQDIdl_TB-60ZysfuzxCSpWDAWIwXvGI1-8Ew2HBVhL0nbhcCYTB9l32uuQgIdu8P0xkguGrCSmiL0F4XAUZfyvth3EI3teJ5K9xNQh0f-RsOgaGMjen1b85eV_b41tC_h_ll0-fqTPcIqtdClA1GmhOK24u43y_MoHz85RqhiPTtAHbpvP3ZvpLcrhdVGpxE4KJJfzFqjeP"
         }
       }
     ]
