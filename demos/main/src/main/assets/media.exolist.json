@@ -82,6 +82,11 @@
         "extension": "mpd"
       },
       {
+        "name": "TEST_4K_new",
+        "uri": "http://b89.cdncert.telefonica.com/live/disk01/TEST_4K/TEST_4K/TEST_4K.mpd",
+        "extension": "mpd"
+      },
+      {
         "name": "PR 2730966 Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo ",
         "uri": "http://b18.cdnprepro.telefonica.com/18/00/06/04/6044864_5E722D63AFC1A5F8/PR_4K_SDR_AM_169__15f79957be3d43f4.mpd",
         "extension": "mpd",
