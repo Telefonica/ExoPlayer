@@ -127,6 +127,7 @@ public final class MediaCodecUtil {
     @Nullable
     MediaCodecInfo decoderInfo =
         getDecoderInfo(MimeTypes.AUDIO_RAW, /* secure= */ false, /* tunneling= */ false);
+    Log.d(TAG, "[getPassthroughDecoderInfo] " + decoderInfo.name);
     return decoderInfo == null ? null : MediaCodecInfo.newPassthroughInstance(decoderInfo.name);
   }
 

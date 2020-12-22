@@ -4,7 +4,7 @@
     "name": "4K",
     "samples": [
       {
-        "name": "VSPP_Temporal1 - Canal 944 - Partido de Polo",
+        "name": "Live: VSPP_Temporal1 - Canal 944 - Partido de Polo",
         "uri": "http://b27.cdnprepro.telefonica.com/27/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-HighDefinitionFull-Staging-28",
         "extension": "mpd",
         "drm_scheme": "widevine",
@@ -14,7 +14,7 @@
         }
       },
       {
-        "name": "Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo 6.3.12",
+        "name": "VoD: Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo 6.3.12",
         "uri": "http://b18.cdnprepro.telefonica.com/18/00/07/96/7969207_1C6229DDF2BCF489/PR_4K_HDR10_AM_169__88fa06d298bf404c.mpd",
         "extension": "mpd",
         "drm_scheme": "widevine",

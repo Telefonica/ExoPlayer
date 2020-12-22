@@ -371,6 +371,7 @@ public class MediaCodecAudioRenderer extends MediaCodecRenderer implements Media
     if (!MimeTypes.isAudio(mimeType)) {
       return RendererCapabilities.create(FORMAT_UNSUPPORTED_TYPE);
     }
+    Log.d("Maria", "Audio - CodecName " + mimeType);
     @TunnelingSupport
     int tunnelingSupport = Util.SDK_INT >= 21 ? TUNNELING_SUPPORTED : TUNNELING_NOT_SUPPORTED;
     boolean supportsFormatDrm =
@@ -407,6 +408,7 @@ public class MediaCodecAudioRenderer extends MediaCodecRenderer implements Media
             : ADAPTIVE_NOT_SEAMLESS;
     @FormatSupport
     int formatSupport = isFormatSupported ? FORMAT_HANDLED : FORMAT_EXCEEDS_CAPABILITIES;
+    Log.d("Maria", "tunnelingSupport " + tunnelingSupport);
     return RendererCapabilities.create(formatSupport, adaptiveSupport, tunnelingSupport);
   }
 

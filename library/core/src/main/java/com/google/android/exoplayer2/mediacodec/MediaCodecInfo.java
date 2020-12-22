@@ -129,6 +129,7 @@ public final class MediaCodecInfo {
    * @return The created instance.
    */
   public static MediaCodecInfo newPassthroughInstance(String name) {
+    Log.d("Maria", "CodecName " + name);
     return new MediaCodecInfo(
         name,
         /* mimeType= */ null,
@@ -242,6 +243,7 @@ public final class MediaCodecInfo {
    * @throws MediaCodecUtil.DecoderQueryException Thrown if an error occurs while querying decoders.
    */
   public boolean isFormatSupported(Format format) throws MediaCodecUtil.DecoderQueryException {
+    Log.d("Maria", "CodecName " + name);
     if (!isCodecSupported(format)) {
       return false;
     }
@@ -582,6 +584,12 @@ public final class MediaCodecInfo {
       // floor to avoid situations where a range check in areSizeAndRateSupported fails due to
       // slightly exceeding the limits for a standard format (e.g., 1080p at 30 fps).
       double floorFrameRate = Math.floor(frameRate);
+      Log.d("Maria", "[areSizeAndRateSupportedV21] " );
+      Log.d("Maria", "[areSizeAndRateSupportedV21] getSupportedWidths: " + capabilities.getSupportedWidths());
+      Log.d("Maria", "[areSizeAndRateSupportedV21] getSupportedHeights: " + capabilities.getSupportedHeights());
+      Log.d("Maria", "[areSizeAndRateSupportedV21] getSupportedFrameRates: " + capabilities.getSupportedFrameRates());
+      Log.d("Maria", "[areSizeAndRateSupportedV21] getSupportedFrameRatesFor " +width+"x"+height+": "+ capabilities.getSupportedFrameRatesFor(width, height));
+      Log.d("Maria", "[areSizeAndRateSupportedV21] ");
       return capabilities.areSizeAndRateSupported(width, height, floorFrameRate);
     }
   }
