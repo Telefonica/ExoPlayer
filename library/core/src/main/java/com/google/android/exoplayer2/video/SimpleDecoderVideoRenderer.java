@@ -776,7 +776,7 @@ public abstract class SimpleDecoderVideoRenderer extends BaseRenderer {
   private boolean drainOutputBuffer(long positionUs, long elapsedRealtimeUs)
       throws ExoPlaybackException, VideoDecoderException {
     if (outputBuffer == null) {
-      outputBuffer = decoder.dequeueOutputBuffer();
+//      outputBuffer = decoder.dequeueOutputBuffer();
       if (outputBuffer == null) {
         return false;
       }

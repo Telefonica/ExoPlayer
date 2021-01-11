@@ -1093,7 +1093,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
    */
   protected void skipOutputBuffer(MediaCodec codec, int index, long presentationTimeUs) {
     TraceUtil.beginSection("skipVideoBuffer");
-    codec.releaseOutputBuffer(index, false);
+  //  codec.releaseOutputBuffer(index, false);
     TraceUtil.endSection();
     decoderCounters.skippedOutputBufferCount++;
   }
@@ -1107,7 +1107,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
    */
   protected void dropOutputBuffer(MediaCodec codec, int index, long presentationTimeUs) {
     TraceUtil.beginSection("dropVideoBuffer");
-    codec.releaseOutputBuffer(index, false);
+ //   codec.releaseOutputBuffer(index, false);
     TraceUtil.endSection();
     updateDroppedBufferCounters(1);
   }
@@ -1178,7 +1178,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
   protected void renderOutputBuffer(MediaCodec codec, int index, long presentationTimeUs) {
     maybeNotifyVideoSizeChanged();
     TraceUtil.beginSection("releaseOutputBuffer");
-    codec.releaseOutputBuffer(index, true);
+ //   codec.releaseOutputBuffer(index, true);
     TraceUtil.endSection();
     lastRenderTimeUs = SystemClock.elapsedRealtime() * 1000;
     decoderCounters.renderedOutputBufferCount++;
@@ -1200,7 +1200,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
       MediaCodec codec, int index, long presentationTimeUs, long releaseTimeNs) {
     maybeNotifyVideoSizeChanged();
     TraceUtil.beginSection("releaseOutputBuffer");
-    codec.releaseOutputBuffer(index, releaseTimeNs);
+ //   codec.releaseOutputBuffer(index, releaseTimeNs);
     TraceUtil.endSection();
     lastRenderTimeUs = SystemClock.elapsedRealtime() * 1000;
     decoderCounters.renderedOutputBufferCount++;
@@ -1311,7 +1311,7 @@ public class MediaCodecVideoRenderer extends MediaCodecRenderer {
   @TargetApi(21)
   private static void configureTunnelingV21(MediaFormat mediaFormat, int tunnelingAudioSessionId) {
     mediaFormat.setFeatureEnabled(CodecCapabilities.FEATURE_TunneledPlayback, true);
-    mediaFormat.setInteger(MediaFormat.KEY_AUDIO_SESSION_ID, tunnelingAudioSessionId);
+    mediaFormat.setInteger(android.media.MediaFormat.KEY_AUDIO_SESSION_ID, tunnelingAudioSessionId);
   }
 
   /**

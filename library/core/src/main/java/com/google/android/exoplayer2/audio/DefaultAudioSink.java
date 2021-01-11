@@ -17,6 +17,7 @@ package com.google.android.exoplayer2.audio;
 
 import android.annotation.SuppressLint;
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.media.AudioFormat;
 import android.media.AudioManager;
 import android.media.AudioTrack;
@@ -913,7 +914,7 @@ public final class DefaultAudioSink implements AudioSink {
     if (!tunneling || audioSessionId != tunnelingAudioSessionId) {
       tunneling = true;
       audioSessionId = tunnelingAudioSessionId;
-      flush();
+      reset();
     }
   }
 
@@ -922,7 +923,7 @@ public final class DefaultAudioSink implements AudioSink {
     if (tunneling) {
       tunneling = false;
       audioSessionId = C.AUDIO_SESSION_ID_UNSET;
-      flush();
+      reset();
     }
   }
 
@@ -1434,17 +1435,25 @@ public final class DefaultAudioSink implements AudioSink {
     private AudioTrack createAudioTrackV21(
         boolean tunneling, AudioAttributes audioAttributes, int audioSessionId) {
       android.media.AudioAttributes attributes;
+      AudioFormat format;
       if (tunneling) {
-        attributes =
+/*        attributes =
             new android.media.AudioAttributes.Builder()
                 .setContentType(android.media.AudioAttributes.CONTENT_TYPE_MOVIE)
                 .setFlags(android.media.AudioAttributes.FLAG_HW_AV_SYNC)
                 .setUsage(android.media.AudioAttributes.USAGE_MEDIA)
                 .build();
+
+ */
+        attributes = new android.media.AudioAttributes.Builder()
+            .setLegacyStreamType(AudioManager.STREAM_MUSIC)
+            .setFlags(android.media.AudioAttributes.FLAG_HW_AV_SYNC)
+            .build();
       } else {
         attributes = audioAttributes.getAudioAttributesV21();
       }
-      AudioFormat format =
+
+      format =
           new AudioFormat.Builder()
               .setChannelMask(outputChannelConfig)
               .setEncoding(outputEncoding)

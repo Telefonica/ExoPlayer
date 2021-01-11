@@ -81,7 +81,7 @@ public class VideoDecoderOutputBuffer extends OutputBuffer {
 
   @Override
   public void release() {
-    owner.releaseOutputBuffer(this);
+ //   owner.releaseOutputBuffer(this);
   }
 
   /**

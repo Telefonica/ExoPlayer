@@ -15,8 +15,12 @@
  */
 package com.google.android.exoplayer2.demo;
 
+import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
+import android.media.AudioFormat;
+import android.media.AudioManager;
+import android.media.AudioTrack;
 import android.media.MediaDrm;
 import android.net.Uri;
 import android.os.Bundle;
@@ -218,7 +222,9 @@ public class PlayerActivity extends AppCompatActivity
           new DefaultTrackSelector.ParametersBuilder(/* context= */ this);
       boolean tunneling = intent.getBooleanExtra(TUNNELING_EXTRA, false);
       if (Util.SDK_INT >= 21 && tunneling) {
-        builder.setTunnelingAudioSessionId(C.generateAudioSessionIdV21(/* context= */ this));
+        AudioManager audioManager = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
+        int audioSessionId = audioManager.generateAudioSessionId();
+        builder.setTunnelingAudioSessionId(audioSessionId);
       }
       trackSelectorParameters = builder.build();
       clearStartPosition();

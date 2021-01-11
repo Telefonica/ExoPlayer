@@ -129,7 +129,7 @@ public abstract class SimpleDecoder<
   @CallSuper
   protected void releaseOutputBuffer(O outputBuffer) {
     synchronized (lock) {
-      releaseOutputBufferInternal(outputBuffer);
+ //     releaseOutputBufferInternal(outputBuffer);
       maybeNotifyDecodeLoop();
     }
   }
