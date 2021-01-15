@@ -914,7 +914,7 @@ public final class DefaultAudioSink implements AudioSink {
     if (!tunneling || audioSessionId != tunnelingAudioSessionId) {
       tunneling = true;
       audioSessionId = tunnelingAudioSessionId;
-      reset();
+      flush();
     }
   }
 
@@ -923,7 +923,7 @@ public final class DefaultAudioSink implements AudioSink {
     if (tunneling) {
       tunneling = false;
       audioSessionId = C.AUDIO_SESSION_ID_UNSET;
-      reset();
+      flush();
     }
   }
 

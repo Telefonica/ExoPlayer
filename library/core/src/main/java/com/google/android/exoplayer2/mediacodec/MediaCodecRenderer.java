@@ -718,7 +718,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
       if (codec != null) {
         long drainStartTimeMs = SystemClock.elapsedRealtime();
         TraceUtil.beginSection("drainAndFeed");
-        while (drainOutputBuffer(positionUs, elapsedRealtimeUs)) {}
+      //  while (drainOutputBuffer(positionUs, elapsedRealtimeUs)) {}
         while (feedInputBuffer() && shouldContinueFeeding(drainStartTimeMs)) {}
         TraceUtil.endSection();
       } else {
@@ -770,7 +770,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
         || codecNeedsFlushWorkaround
         || (codecNeedsSosFlushWorkaround && !codecHasOutputMediaFormat)
         || (codecNeedsEosFlushWorkaround && codecReceivedEos)) {
-      releaseCodec();
+    //  releaseCodec();
       return true;
     }
 
@@ -1539,7 +1539,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
       // We've dequeued a buffer.
       if (shouldSkipAdaptationWorkaroundOutputBuffer) {
         shouldSkipAdaptationWorkaroundOutputBuffer = false;
-        codec.releaseOutputBuffer(outputIndex, false);
+ //       codec.releaseOutputBuffer(outputIndex, false);
         return true;
       } else if (outputBufferInfo.size == 0
           && (outputBufferInfo.flags & MediaCodec.BUFFER_FLAG_END_OF_STREAM) != 0) {
@@ -1727,7 +1727,7 @@ public abstract class MediaCodecRenderer extends BaseRenderer {
   }
 
   private void reinitializeCodec() throws ExoPlaybackException {
-    releaseCodec();
+  //  releaseCodec();
     maybeInitCodec();
   }
 

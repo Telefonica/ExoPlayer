@@ -198,7 +198,7 @@ import java.util.PriorityQueue;
 
     @Override
     public final void release() {
-      releaseOutputBuffer(this);
+  //    releaseOutputBuffer(this);
     }
   }
 }

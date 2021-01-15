@@ -65,7 +65,7 @@ public abstract class SimpleSubtitleDecoder extends
 
   @Override
   protected final void releaseOutputBuffer(SubtitleOutputBuffer buffer) {
-    super.releaseOutputBuffer(buffer);
+ //   super.releaseOutputBuffer(buffer);
   }
 
   @SuppressWarnings("ByteBufferBackingArray")

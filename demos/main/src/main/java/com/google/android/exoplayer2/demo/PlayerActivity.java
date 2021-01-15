@@ -222,7 +222,7 @@ public class PlayerActivity extends AppCompatActivity
           new DefaultTrackSelector.ParametersBuilder(/* context= */ this);
       boolean tunneling = intent.getBooleanExtra(TUNNELING_EXTRA, false);
       if (Util.SDK_INT >= 21 && tunneling) {
-        AudioManager audioManager = (AudioManager) this.getSystemService(Context.AUDIO_SERVICE);
+        AudioManager audioManager = (AudioManager) getApplicationContext().getSystemService(Context.AUDIO_SERVICE);
         int audioSessionId = audioManager.generateAudioSessionId();
         builder.setTunnelingAudioSessionId(audioSessionId);
       }
