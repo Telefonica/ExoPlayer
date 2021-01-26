@@ -206,7 +206,6 @@ public final class MediaCodecUtil {
       @Nullable
       MediaCodecInfo decoderInfo =
           getDecoderInfo(MimeTypes.VIDEO_H264, /* secure= */ false, /* tunneling= */ false);
-      Log.d("Hola", "codecInfo " );
       if (decoderInfo != null) {
         for (CodecProfileLevel profileLevel : decoderInfo.getProfileLevels()) {
           result = max(avcLevelToMaxFrameSize(profileLevel.level), result);
@@ -217,7 +216,6 @@ public final class MediaCodecUtil {
       }
       maxH264DecodableFrameSize = result;
     }
-    Log.d("Hola", "maxH264DecodableFrameSize --- result " + maxH264DecodableFrameSize);
     return maxH264DecodableFrameSize;
   }
 

@@ -16,6 +16,7 @@
 package com.google.android.exoplayer2.demo;
 
 import android.content.Context;
+import beta.paytvapp.mca.go.BuildConfig;
 import com.google.android.exoplayer2.DefaultRenderersFactory;
 import com.google.android.exoplayer2.RenderersFactory;
 import com.google.android.exoplayer2.database.DatabaseProvider;
