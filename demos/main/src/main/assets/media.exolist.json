@@ -1,5 +1,30 @@
 [
   {
+    "name": "4K",
+    "samples": [
+      {
+        "name": "Live: VSPP_Temporal1 - Canal 944 - Partido de Polo",
+        "uri": "http://b27.cdnprepro.telefonica.com/27/sdash/LIVE$VSPP_Temporal1/index.mpd/Manifest.mpd?start=LIVE&end=END&device=Dashhevc-HighDefinitionFull-Staging-28",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_ZFe48hF6Nlr_4lYtsHaPpovjDh4jmDsC1A4b0YsDHqVJoVxjTrzmq6HW-BOKeCbX2XBP_mXHh1ecVHvZh6xBFCQpTHT888fFe67nCnwAnNRl9xUUPq09Ba8KVzvMjynZKAVamIyWV4gRYp4FIhxWUw9fMvNHIrS__bF_OQ5yHtSK7LvklzeVyh3u9epNCr1cqLSC6rvhieqCQNgl3Ya548H7cfTMtRYbiPeQlZVLaUP76bt7bI9ZwFDz4cIpH7k9XflvS9AsYGKk5NftOw-Zd5CLkl4_gUia-g3SbwVRRMa0JWupd5Bl3Kzne7TPwsgCxg3VjsOZbMQGqMAhmVkv6ljt6H8fTQLyoXDq-zOpeIg"
+        }
+      },
+      {
+        "name": "VoD: Quantum Of Solace 4K/UHD HDR10 2 audios AAC 1 subtítulo 6.3.12",
+        "uri": "http://b18.cdnprepro.telefonica.com/18/00/07/96/7969207_1C6229DDF2BCF489/PR_4K_HDR10_AM_169__88fa06d298bf404c.mpd",
+        "extension": "mpd",
+        "drm_scheme": "widevine",
+        "drm_license_url": "https://wvcypherdrm-preprod.labs.gvp.telefonica.com/DashIssuer.aspx",
+        "drm_key_request_properties": {
+          "X-Authentication": "AU_ZGAE6U_ZFe48hF6Nlr_4lYtsHaPpovjDh4jmDsC1A4b0YsDHqVJoVxjTrzmq6HW-BOKeCbX2XBP_mXHh1ecVHvZh6xBFCQpTHT888fFe67nCnwAnNRl9xUUPq09Ba8KVzvMjynZKAVamIyWV4gRYp4FIhxWUw9fMvNHIrS__bF_OQ5yHtSK7LvklzeVyh3u9epNCr1cqLSC6rvhieqCQNgl3Ya548H7cfTMtRYbiPeQlZVLaUP76bt7bI9ZwFDz4cIpH7k9XflvS9AsYGKk5NftOw-Zd5CLkl4_gUia-g3SbwVRRMa0JWupd5Bl3Kzne7TPwsgCxg3VjsOZbMQGqMAhmVkv6ljt6H8fTQLyoXDq-zOpeIg"
+        }
+      }
+    ]
+  }
+,  {
     "name": "TEF",
     "samples": [
       {
